@@ -140,60 +140,23 @@ body, html {
 
 }
 
-/* Extra small screens (very small phones) */
-@media screen and (max-width: 400px) {
-  .content {
-    top: 15vh;
-    padding: 1rem 0.6rem;
-    max-width: 95%;
-    font-size: 0.85rem;
-  }
-
-  h1 {
-    font-size: 1.4rem;
-  }
-
-  h2 {
-    font-size: 1.1rem;
-  }
-
-  p {
-    font-size: 0.85rem;
-  }
-
+/* Fix form inputs and button for small screens */
+@media screen and (max-width: 500px) {
   #goal-form {
+    flex-direction: column;
     gap: 0.5rem;
+    align-items: stretch; /* Make children fill container width */
   }
 
   #goal-input, #deadline-input, #goal-form button {
-    font-size: 0.85rem;
-    padding: 0.45rem 0.7rem;
+    width: 100%;        /* Take full available width */
+    box-sizing: border-box;
+    font-size: 0.9rem;  /* Slightly smaller font */
+    padding: 0.5rem 0.8rem;
   }
 
-  #goals-list li {
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 0.85rem;
-    padding: 0.5rem 0.6rem;
-  }
-
-  #goals-list li span {
-    margin-bottom: 0.25rem;
-    word-break: break-word;
-  }
-
-  #goals-list li button {
-    margin-left: 0;
-    align-self: flex-end;
-    margin-top: 0.25rem;
-    padding: 0.35rem 0.7rem;
-    font-size: 0.85rem;
-  }
-
-  #background-video {
-    min-width: 100vw;
-    min-height: 100vh;
-    object-fit: cover;
-    filter: brightness(0.6) blur(0.5px);
+  #goal-form button {
+    margin-top: 0.3rem;
   }
 }
+
