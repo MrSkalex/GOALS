@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Behind Text</title>
+  <!-- ...existing code... -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+<!-- ...existing code... -->
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="background-video">
+    <source src="BACK.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+<!-- ...existing code... -->
+  <div class="content">
+    <h1>SKAL8X GOAL LIST</h1>
+    <p>Website only for limited people, so be gratefull if you see this.</p>
+
+ <!-- ...existing code... -->
+<section class="goals-section">
+  <h2>My Goals</h2>
+  <form id="goal-form">
+    <input type="text" id="goal-input" placeholder="Enter your goal" required>
+    <input type="date" id="deadline-input" required>
+    <button type="submit">Add Goal</button>
+  </form>
+  <ul id="goals-list"></ul>
+</section>
+<!-- ...existing code... -->
+  </div>
+<!-- ...existing code... -->
+<script src="goals.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: rgba(0,0,0,0.7);
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(0.7) blur(1px);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  top: 40vh;
+  padding: 2rem 1rem;
+  background: rgba(0,0,0,0.4);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.goals-section {
+  margin-top: 2rem;
+  background: rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.goals-section h2 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: #aaffcc;
+  text-shadow: 0 2px 8px #0006;
+}
+
+#goal-form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+#goal-input, #deadline-input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #222c;
+  color: #fff;
+  outline: none;
+  transition: background 0.2s;
+}
+
+#goal-input:focus, #deadline-input:focus {
+  background: #333c;
+}
+
+#goal-form button {
+  background: linear-gradient(90deg, #00ff99 30%, #00cfff 100%);
+  color: #222;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px #00ff9944;
+}
+
+#goal-form button:hover {
+  background: linear-gradient(90deg, #00cfff 30%, #00ff99 100%);
+  transform: translateY(-2px) scale(1.05);
+}
+
+#goals-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#goals-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(0,0,0,0.25);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
+  box-shadow: 0 2px 8px #0002;
+  font-size: 1.08rem;
+  transition: background 0.3s;
+}
+
+#goals-list li:hover {
+  background: rgba(0,255,153,0.08);
+}
+
+#goals-list li span {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+#goals-list li button {
+  margin-left: auto;
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.35rem 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px #ff4d4d33;
+}
+
+#goals-list li button:hover {
+  background: #ff1a1a;
+  transform: scale(1.07);
+}
+
+#goals-list li span[style*="background: limegreen"] {
+  box-shadow: 0 0 8px 2px #00ff99aa;
+  transition: width 1s cubic-bezier(.4,2,.6,1), opacity 0.5s;
+}
