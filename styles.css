@@ -137,4 +137,64 @@ body, html {
 #goals-list li span[style*="background: limegreen"] {
   box-shadow: 0 0 8px 2px #00ff99aa;
   transition: width 1s cubic-bezier(.4,2,.6,1), opacity 0.5s;
+
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 600px) {
+  .content {
+    top: 20vh;
+    padding: 1.5rem 1rem;
+    max-width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .goals-section {
+    padding: 1rem 0.8rem;
+  }
+
+  #goal-form {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  #goal-input, #deadline-input, #goal-form button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  #goals-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.95rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  #goals-list li span {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  #goals-list li button {
+    margin-left: 0;
+    align-self: flex-end;
+    margin-top: 0.3rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  #background-video {
+    filter: brightness(0.6) blur(0.5px);
+  }
 }
